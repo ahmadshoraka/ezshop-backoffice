@@ -1,0 +1,49 @@
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.section-style {
+  padding: .5% 1% .5%;
+  border-bottom: 1px solid #d5d5d5;
+
+  .header-flex-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .header-title {
+    width: 50%;
+
+    .p-l{
+      padding-left: 5%;
+    }
+    span {
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+
+  .button-div{
+    direction: ltr;
+
+    :nth-child(2) {
+      padding-left: 3%;
+    }
+  }
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .header-flex-box{
+    flex-direction: column !important;
+  }
+}

@@ -1,0 +1,35 @@
+@media (max-width: 800px) {
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100% !important;
+    min-width: 100%;
+    margin: 0 !important;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 67%;
+  padding-right: 16px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  mat-form-field {
+    margin: 0 8px;
+  }
+}
+
+.centralize {
+  text-align: center;
+  margin: 16px;
+
+  button {
+    margin: 0 8px;
+  }
+}

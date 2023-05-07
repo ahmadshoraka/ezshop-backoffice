@@ -1,0 +1,74 @@
+<mat-toolbar>
+  <div>
+    فروشگاه ساز
+  </div>
+
+  <div>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over' && showMenu" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+      <!-- <mat-icon> profile </mat-icon> -->
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>person_outline</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item class="profile-button ">
+        <mat-icon class="mat-menu-icon">person_outline</mat-icon>
+        <span class="profile-button-span">
+          <span>احمد شرکا</span>
+          <span>09195154878</span>
+        </span>
+      </button>
+      <button mat-menu-item class="d-rtl" (click)="logOut()">
+        <mat-icon class="mat-menu-icon">logout</mat-icon>
+        <span class="logout-button-span">خروج از حساب</span>
+      </button>
+    </mat-menu>
+
+  </div>
+
+
+
+</mat-toolbar>
+
+<div>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" position="end" class="shadow">
+      <img class="avatar shadow" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
+
+      <div>
+        <button mat-stroked-button color="primary" color="primary">
+          فروشگاه
+        </button>
+
+        <button mat-stroked-button color="primary" color="primary">
+          تنظیمات
+        </button>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <button mat-button *ngFor="let item of items; let i = index" class="menu-button" [routerLink]="item.path"
+        [class.selected]="selectedButtonIndex === i" (click)="onButtonClick(i)">
+        <mat-icon>{{ item.icon}}</mat-icon>
+        <span> {{item.title}}</span>
+      </button>
+
+      <mat-divider></mat-divider>
+
+      <app-market-list></app-market-list>
+
+      
+    </mat-sidenav>
+
+    <mat-sidenav-content [style.margin-right]="sidenav.opened ? '400px' : '0'">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>

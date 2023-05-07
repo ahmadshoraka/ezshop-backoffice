@@ -1,0 +1,47 @@
+<mat-card class="example-card">
+  <mat-toolbar>
+    <span>ورود</span>
+  </mat-toolbar>
+  <mat-card-content>
+    <form class="example-form" dir="rtl">
+      <mat-form-field appearance="outline" class="example-full-width" *ngIf="mood==='register'">
+        <mat-label>شماره تلفن همراه</mat-label>
+        <input matInput type="text" [(ngModel)]="phoneNumber" (keyup)="onValidateNumber()"
+          [ngModelOptions]="{standalone: true}" mask="00000000000" *ngIf="mood==='register'">
+      </mat-form-field>
+      <span *ngIf="error && mood==='register'" style="color: red;">
+        {{ errorMessage ? errorMessage : 'خطایی پیش آمده است لطفا دوباره تلاش کنید.' }}
+      </span>
+      <div *ngIf="mood==='verify'">
+        <div class="text-header">کد تایید ارسالی به شماره {{phoneNumber}} را وارد نمایید.</div>
+        <button mat-button color="primary" (click)="editPhone()">ویرایش شماره تلفن</button>
+      </div>
+      <mat-form-field appearance="outline" class="example-full-width" *ngIf="mood==='verify'">
+        <mat-label>کد تایید 4 رقمی</mat-label>
+        <input matInput type="text" [(ngModel)]="password" (keyup)="onValidateNumber()"
+          [ngModelOptions]="{standalone: true}" mask="0000" *ngIf="mood==='verify'">
+      </mat-form-field>
+      <span *ngIf="error && mood==='verify'" style="color: red;">
+        {{ errorMessage ? errorMessage : 'خطایی پیش آمده است لطفا دوباره تلاش کنید.' }}
+      </span>
+    </form>
+    <mat-card-actions>
+      <button mat-button mat-raised-button color="primary" (click)="verifications(mood)" [disabled]="disabled">
+
+        <span *ngIf="spinner">
+          <mat-spinner light-spinner [diameter]="30"></mat-spinner>
+        </span>
+        <span *ngIf="mood==='register' && !spinner"> دریافت کد ورود </span>
+        <span *ngIf="mood==='verify' && !spinner"> ورود </span>
+      </button>
+      <div *ngIf="mood==='verify'" class="counter">
+        <span *ngIf="counter != 0">
+          {{counter}} ثانیه تا ارسال کد تایید
+        </span>
+        <button mat-button mat-stroked-button color="primary" (click)="onResendClick()" *ngIf="counter === 0">
+          <span> ارسال مجدد کد تایید </span>
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card-content>
+</mat-card>

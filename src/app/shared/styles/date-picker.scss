@@ -1,0 +1,27 @@
+dp-date-picker {
+  position: relative !important;
+
+  button {
+    font-family: YekanBakh !important;
+  }
+
+  .dp-picker-input {
+    width: 0 !important;
+    display: none !important;
+  }
+}
+
+dp-day-calendar.dp-material .dp-calendar-month, dp-day-calendar.dp-material .dp-calendar-day {
+  text-align: center;
+}
+dp-calendar-nav .dp-calendar-nav-container-left, dp-calendar-nav .dp-calendar-nav-container-right {
+  margin-right: 6px;
+}
+
+dp-calendar-nav .dp-nav-btns-container {
+  top: 55% !important;
+}
+
+dp-calendar-nav.dp-material .dp-calendar-nav-container {
+  height: 38px;
+}

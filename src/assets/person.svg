@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#59c6c9}
+        </style>
+        <clipPath id="clip-path">
+            <path d="M0 0h38v38H0z" class="cls-1"/>
+        </clipPath>
+    </defs>
+    <g id="Icon_Circle_Rounded" class="cls-2" data-name="Icon / Circle / Rounded">
+        <path id="Box" d="M0 0h38v38H0z" class="cls-1"/>
+        <path id="Path_2015" d="M928.9 29.24a12.4 12.4 0 0 1-10.2-5.44c0-3.4 6.8-5.27 10.2-5.27s10.2 1.87 10.2 5.27a12.4 12.4 0 0 1-10.2 5.44zm0-24.14a5.009 5.009 0 0 1 5.1 5.1 5.1 5.1 0 1 1-10.2 0 5.009 5.009 0 0 1 5.1-5.1zm0-5.1a17 17 0 1 0 17 17 17.05 17.05 0 0 0-17-17z" class="cls-3" data-name="Path 2015" transform="translate(-910 2)"/>
+    </g>
+</svg>

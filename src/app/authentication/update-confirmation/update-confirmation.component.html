@@ -1,0 +1,20 @@
+<div class="dialog-container">
+  <div class="dialog-header mat-elevation-z4">
+    <h2 mat-dialog-title class="font-family">بروز‌رسانی پنل ادمین</h2>
+    <mat-icon [mat-dialog-close]="false">close</mat-icon>
+  </div>
+
+  <mat-dialog-content class="mat-typography dialog">
+      <div class="confirm">
+        <p>نسخه جدید پنل ادمین در دسترس می باشد، آیا می خواهید بروز‌رسانی کنید؟</p>
+      </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button mat-raised-button color="primary" (click)="confirm()">
+      بروز‌رسانی
+    </button>
+    <button mat-raised-button [mat-dialog-close]="false">انصراف</button>
+  </mat-dialog-actions>
+</div>
+

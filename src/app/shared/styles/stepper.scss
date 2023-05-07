@@ -1,0 +1,26 @@
+.mat-step-header .mat-step-icon-selected, .mat-tab-group.mat-primary .mat-ink-bar{
+  background-color:  #1076ff !important;
+}
+
+.mat-stepper-vertical-line::before{
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 10px;
+    bottom: -16px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(0,0,0,.12);
+    border-left: none !important;
+  }
+  
+  .mat-vertical-content-container {
+    margin-right: 36px !important;
+    margin-left: 0 !important;
+    border: 0;
+    position: relative;
+  }
+  
+  .mat-vertical-stepper-header .mat-step-icon {
+    margin-left: 12px;
+  }

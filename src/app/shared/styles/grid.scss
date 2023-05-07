@@ -1,0 +1,77 @@
+table {
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, .12);
+  border-left: 1px solid rgba(0, 0, 0, .12);
+}
+
+tbody>tr {
+  cursor: pointer;
+}
+
+td,
+th {
+  text-align: center !important;
+}
+
+th,
+.paginator,
+.paginator .mat-select-value-text {
+  background-color: #95BBF9;
+  color: white !important;
+}
+
+.mat-paginator-range-actions,
+.mat-paginator-range-label {
+  direction: ltr;
+}
+
+.mat-paginator-page-size-label {
+  margin: auto !important;
+}
+
+.mat-paginator-page-size-select {
+  width: 56px;
+  margin: auto !important;
+  padding-right: 10px !important;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+[row] {
+  position: relative;
+  display: flex;
+  padding: 10px 30px;
+  color: #30475e;
+  justify-content: space-between;
+}
+
+[row]>[col] {
+  font-size: 16px;
+}
+
+[row]>[col-2] {
+  width: 50%;
+  font-size: 16px;
+}
+
+[row]>[col-3] {
+  width: 33%;
+  font-size: 16px;
+}
+
+[row]>[col-4] {
+  width: 25%;
+  font-size: 16px;
+}
+
+[export-excel-div] {
+  padding: 10px 0;
+  text-align: center;
+  margin: auto;
+}

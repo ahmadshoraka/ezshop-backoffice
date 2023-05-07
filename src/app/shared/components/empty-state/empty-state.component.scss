@@ -1,0 +1,21 @@
+.empty-state-content {
+  background: #ddd;
+  border: 1px outset #95BBF9;
+  color: #F4F4F2;
+  margin: 25px 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.empty-state-image {
+  width: 20px;
+}
+
+.empty-state-text {
+  padding: 10px;
+  color: #000;
+}

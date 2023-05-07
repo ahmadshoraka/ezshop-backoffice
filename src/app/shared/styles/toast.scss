@@ -1,0 +1,13 @@
+.error {
+  direction: rtl;
+  --mat-mdc-snack-bar-button-color: white;
+  --mdc-snackbar-container-color: #db2509;;
+  --mdc-snackbar-supporting-text-color: rgba(255, 255, 255, 0.87);;
+}
+
+.success {
+  direction: rtl;
+  --mat-mdc-snack-bar-button-color: white;
+  --mdc-snackbar-container-color: #006349;
+  --mdc-snackbar-supporting-text-color: rgba(255, 255, 255, 0.87);
+}

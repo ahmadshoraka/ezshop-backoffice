@@ -1,0 +1,121 @@
+// @import '~@angular/material/theming';
+
+button {
+  font-family: "IRANSansWeb" !important;
+}
+
+.success-button-active {
+  background-color: #006349 !important;
+  color: white !important;
+}
+
+.success-button-disabled {
+  background-color: #006349 !important;
+  color: white !important;
+  opacity: 0.5;
+  cursor: none;
+}
+
+// .mat-stroked-button.mat-primary,
+// .mat-raised-button.mat-primary,
+// .mat-flat-button.mat-primary,
+// .mat-mini-fab.mat-primary,
+// .mat-fab.mat-primary {
+//   background-color: #1f2aad !important;
+//   color: white !important;
+//   margin: 0 0 0 8px;
+// }
+
+// [fab-search] {
+//   position: absolute !important;
+//   left: 25px;
+//   top: -30px;
+//   background-color: #ffd12e !important;
+//   color: gray !important;
+// }
+
+// [fab-refresh] {
+//   position: absolute !important;
+//   left: 100px;
+//   top: -30px;
+//   color: #ffd12e !important;
+//   background-color: gray !important;
+// }
+
+// [fab-excel] {
+//   position: absolute !important;
+//   left: 175px;
+//   top: -30px;
+//   color: white !important;
+//   background-color: #02af02 !important;
+
+//   svg {
+//     height: 35px;
+//     margin: auto;
+//     text-align: center;
+//     justify-content: center;
+//     margin-top: -7px;
+//   }
+// }
+
+// [fab-chart-excel ] {
+//   bottom: 14px;
+//   color: white !important;
+//   background-color: #02af02 !important;
+
+//   svg {
+//     height: 35px;
+//     margin: auto;
+//     text-align: center;
+//     justify-content: center;
+//     margin-top: -7px;
+//   }
+// }
+
+// [fab-search]:hover {
+//   background-color: #f8b500 !important;
+// }
+
+// [fab-refresh]:hover {
+//   background-color: rgb(71, 69, 69) !important;
+// }
+
+// [fab-excel]:hover {
+//   background-color: rgb(18, 104, 18) !important;
+// }
+
+// [fab-chart-excel ]:hover {
+//   background-color: rgb(18, 104, 18) !important;
+// }
+
+// [raised-update] {
+//   background-color: #ffd12e !important;
+//   color: gray !important;
+// }
+
+// [raised-update]:hover {
+//   background-color: #f8b500 !important;
+// }
+
+// [raised-block] {
+//   background-color: #f44336 !important;
+//   color: white !important;
+// }
+
+// [raised-block]:hover {
+//   background-color: #c94239 !important;
+// }
+
+// [raised-UnBlock] {
+//   background-color: #168816 !important;
+//   color: white !important;
+// }
+
+// [raised-UnBlock]:hover {
+//   background-color: #035503  !important;
+// }
+
+// button[disabled] {
+//   pointer-events: none;
+//   opacity: 0.6;
+// }

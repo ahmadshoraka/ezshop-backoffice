@@ -1,0 +1,57 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  padding: 0;
+  width: 400px;
+  border: 1px solid #1a237e;
+
+  @media (max-width: 600px ) {
+    width: 90%;
+  }
+
+  .mat-card-content {
+    padding: 20px;
+  }
+
+  mat-toolbar {
+    background-color: #1a237e;
+    color: #ffffff;
+    direction: rtl;
+  }
+
+  mat-card-actions {
+    text-align: center;
+    justify-content: space-between;
+
+    button {
+      margin: 20px 0 !important;
+    }
+  }
+}
+
+.example-form {
+  width: 100%;
+  padding-top: 16px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.text-header {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.counter{
+  text-align: center;
+}
+
+.error{
+  color: red;
+}

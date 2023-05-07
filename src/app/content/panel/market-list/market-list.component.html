@@ -1,0 +1,29 @@
+<mat-accordion dir="rtl">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>add_business</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
+                فروشگاه های من
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-list>
+            <mat-selection-list [formControl]="marketFormControl" [multiple]="false">
+                <mat-list-option *ngFor="let market of marketsList" [value]="market.id">
+                    <img matListItemIcon src="./../../../../assets/بانک آینده.svg">
+                    <div class="market-info">
+                        <span> {{market.title}} </span>
+                        <span class="designation"> {{market.description}} </span>
+                    </div>
+                </mat-list-option>
+                <mat-list-item (click)="marketGenerte()">
+                    <mat-icon matListItemIcon>add</mat-icon>
+                    <div matListItemTitle>ساخت فروشگاه جدید</div>
+                </mat-list-item>
+            </mat-selection-list>
+        </mat-list>
+
+    </mat-expansion-panel>
+</mat-accordion>

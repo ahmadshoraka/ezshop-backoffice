@@ -1,0 +1,65 @@
+<!-- 
+        <div style="margin-right: 17px;">
+            <mat-form-field appearance="outline">
+                <mat-label>کدملی</mat-label>
+                <input formControlName="nationalCode" matInput required>
+            </mat-form-field>
+        </div>
+
+-->
+
+<div class="background-page">
+    <div class="add-title">
+        <h2 class="primary"> ایجاد فروشگاه</h2>
+    </div>
+    <div>
+        <form [formGroup]="marketGenerteForm" (change)="formChanged()">
+            <mat-grid-list cols="2" [cols]="breakpoint" rowHeight="112px" (window:resize)="onResize($event)">
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline" dir="rtl">
+                        <mat-label>عنوان فروشگاه</mat-label>
+                        <input formControlName="title" matInput required>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline" dir="rtl">
+                        <mat-label>آدرس فروشگاه</mat-label>
+                        <input formControlName="path" matInput required style="text-align: left;">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile class="w-100">
+                    <mat-form-field appearance="outline" dir="rtl">
+                        <mat-label> توضیحات </mat-label>
+                        <textarea matInput formControlName="description"></textarea>
+                    </mat-form-field>
+                </mat-grid-tile>
+
+
+
+                <!-- <mat-grid-tile>
+            <div class="text-inside">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Email address" formControlName="email" required>
+                <mat-error *ngIf="marketGenerteForm.controls.email.hasError('required')">
+                  Please enter email id
+                </mat-error>
+                <mat-error *ngIf="marketGenerteForm.controls.email.hasError('email')">
+                  Please enter valid email id
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </mat-grid-tile> -->
+
+            </mat-grid-list>
+
+            <div class="centralize">
+                <button mat-raised-button class="success-button-active" (click)="onMarketGeneration()" [ngClass]="spinner || marketGenerteForm.invalid ? 'success-button-disabled' : 'success-button-active'" [disabled]="spinner || marketGenerteForm.invalid">
+                    <span *ngIf="!spinner">ثبت</span>
+                    <span *ngIf="spinner" class="button-spinner"><mat-spinner [diameter]="30"></mat-spinner></span>
+                </button>
+                <button mat-raised-button (click)="return()">بازگشت</button>
+            </div>
+
+        </form>
+    </div>
+</div>

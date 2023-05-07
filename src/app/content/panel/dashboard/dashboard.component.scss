@@ -1,0 +1,116 @@
+// .invalid-box {
+//     display: flex;
+//     flex-direction: row;
+//     align-content: center;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 28px 12px;
+//     border-radius: 14px;
+//   }
+
+//   .order-boxs {
+//     padding: 28px 12px;
+//     border-radius: 14px;
+//   }
+
+//   .order-boxs-content {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     cursor: pointer;
+//   }
+
+//   .order-boxs-content :hover{
+//     background-color: #F4F5F7;
+//   }
+
+//   .order-box {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     border: solid 1px gainsboro;
+//     border-radius: 14px;
+//     padding: 30px 5px;
+//     width: 20%;
+//   }
+
+//   .chart-box {
+//     padding: 28px 12px;
+//     border-radius: 14px;
+//   }
+
+//   .chart-box-header {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   .chart-box-content {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//   }
+
+//   .product-boxs {
+//     padding: 28px 12px;
+//     border-radius: 14px;
+//   }
+
+//   .product-boxs-content {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     cursor: pointer;
+//   }
+
+//   .product-boxs-content :hover{
+//     background-color: #F4F5F7;
+//   }
+
+//   .product-box {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     border: solid 1px gainsboro;
+//     border-radius: 14px;
+//     padding: 30px 5px;
+//     width: 20%;
+//   }
+
+//   .mb-24 {
+//     margin-bottom: 24px;
+//   }
+
+//   .d-center {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .fw-bold {
+//     font-weight: bold;
+//   }
+
+//   .details-color {
+//     color: #616161;
+//   }
+
+.background-page {
+  padding: 16px;
+  background-color: white;
+  border-radius: 16px;
+  direction: rtl;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+.market-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
